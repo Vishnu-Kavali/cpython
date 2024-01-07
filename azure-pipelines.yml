@@ -11,6 +11,11 @@ pool:
 strategy:
   matrix:
     Python321:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x.x'
+    addToPath: true
+    architecture: 'x64'
       python.version: '3.12.1'
 
 steps:
