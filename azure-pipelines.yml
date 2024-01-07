@@ -11,7 +11,7 @@ pool:
 strategy:
   matrix:
     Python321:
-- task: UsePythonVersion@0
+- task: UsePythonVersion@@
   inputs:
     versionSpec: '3.12.1'
     addToPath: true
